@@ -1,0 +1,85 @@
+/**
+ * @author Indra Kusuma
+ * @github github.com/idindrakusuma
+ * CSS style for FreeCodeCamp project
+ */
+
+:root {
+  --text-color: #888;
+  --text-black: #1b1b1b;
+  --bold: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+
+.page-wrapper {
+  width: 100%;
+}
+
+#header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 0 4px #bbb;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding-left: 24px;
+  width: 1140px;
+}
+
+.img-logo {
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.img-logo > span {
+  font-weight: var(--bold);
+  color: var(--text-color);
+  font-size: 16px;
+  margin-left: 24px;
+}
+
+#header-img {
+  height: 40px;
+  width: auto;
+}
+
+#nav-bar {
+  width: calc(100% - 400px);
+}
+
+#nav-bar > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#nav-bar > ul > li {
+  list-style: none;
+  text-transform: uppercase;
+  margin: 0 8px;
+}
+
+#nav-bar > ul > li > a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: var(--bold);
+}
+
+#nav-bar > ul > li > a:hover {
+  color: var(--text-black);
+}
