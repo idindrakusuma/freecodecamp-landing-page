@@ -129,6 +129,43 @@ body {
 }
 
 #about-page {
-  height: 100vh;
+  min-height: 70vh;
   background: #63c9f0;
+  width: 100%;
+}
+
+.content {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.left-side {
+  width: 50%;
+  text-align: center;
+}
+
+.video-wrapper {
+  background-color: #fff;
+  padding: 8px 8px 4px 8px;
+  border-radius: 8px;
+}
+
+.right-side {
+  width: 50%;
+}
+
+.right-side > p {
+  color: #fff;
+  font-weight: 500;
+  margin: 0 0 16px 16px;
+  text-align: justify;
+  text-indent: 2.5em;
+}
+
+.right-side > h3 {
+  font-weight: var(--bold);
+  color: #fff;
+  margin: 0 0 16px 16px;
+  text-align: center;
 }
