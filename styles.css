@@ -16,6 +16,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -168,4 +172,160 @@ body {
   color: #fff;
   margin: 0 0 16px 16px;
   text-align: center;
+}
+
+/* Sponsors page */
+.row {
+  display: block;
+}
+
+#sponsors-page {
+  min-height: 50vh;
+  width: 100%;
+}
+
+.content > h2 {
+  width: 100%;
+}
+
+.title-basic {
+  padding: 2em 2em 0 2em;
+  text-align: center;
+}
+
+.left-side > img {
+  width: 100%;
+}
+
+.right-side > img {
+  width: 100%;
+}
+
+#sponsors-page > .content {
+  padding: 1em 2em 2em 2em;
+}
+
+#contact-page {
+  min-height: 30vh;
+  width: 100%;
+  display: flex;
+  padding-top: 4em;
+  background: #292b2c;
+}
+
+.col-3 {
+  width: 33.3%;
+  margin-left: 4em;
+}
+
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.text-desc {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.no-style > li {
+  list-style: none;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.title-medium {
+  color: #fff;
+  font-size: 17px;
+}
+
+.form-input {
+  padding: 8px;
+  width: 200px;
+  border-style: none;
+}
+
+input[type="submit"] {
+  background-color: #29d;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 5px 4px;
+  cursor: pointer;
+  margin-left: -8px;
+}
+
+#footer {
+  background: #222324;
+  padding: 16px;
+  text-align: center;
+  color: #fff;
+}
+
+#footer > a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: var(--bold);
+}
+
+
+/* Media query */
+@media only screen and (max-width: 940px) {
+  .col-3 {
+    margin-left: 1em;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .col-3 {
+    margin-left: 8px;
+  }
+}
+
+/* for mobile phone */
+@media only screen and (max-width: 768px) {
+  .mobile {
+    width: 90%;
+    margin: 1em;
+  }
+
+  .content {
+    display: block;
+    padding: 16px;
+  }
+
+  #contact-page {
+    flex-direction: column;
+    padding: 8px 0;
+  }
+
+  .text-welcome {
+    padding-top: 2.4em;
+    font-size: 3em;
+  }
+
+  .text-year {
+    padding-top: 0;
+  }
+
+  .img-logo {
+    width: 100px;
+  }
+
+  .img-logo > span {
+    display: none;
+  }
+
+  #nav-bar {
+    width: 220px;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+  }
 }
